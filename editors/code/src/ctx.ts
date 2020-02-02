@@ -90,7 +90,7 @@ export class Ctx {
 export interface Disposable {
     dispose(): void;
 }
-export type Cmd = (...args: any[]) => unknown;
+export type Cmd = (...args: unknown[]) => unknown;
 
 export async function sendRequestWithRetry<R>(
     client: lc.LanguageClient,
